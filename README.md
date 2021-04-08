@@ -2,7 +2,8 @@
 
 **Paper title** \
 Dogfight: Detecting Drones from Drones Videos \
-Accepted for CVPR 2021
+Accepted for CVPR 2021\
+Preprint available at [arxiv](https://arxiv.org/abs/2103.17242)
 
 # Setup environment
 

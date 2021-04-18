@@ -23,6 +23,7 @@ commands to install a dependency package:
 
 ```
 git clone https://github.com/mwaseema/image-segmentation-keras-implementation
+cd image-segmentation-keras-implementation
 make
 ```
 

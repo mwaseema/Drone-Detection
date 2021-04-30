@@ -175,6 +175,28 @@ following file:\
 If you find any bug, or have some questions, please contact M. Waseem Ashraf (mohammadwaseem043 [at] gmail.com) and
 Waqas Sultani (waqas5163 [at] gmail.com)
 
+# Annotations
+
+Annotations for both, NPS-Drones and FL-Drones dataset are available
+in [annotations folder](https://github.com/mwaseema/Drone-Detection/tree/main/annotations).
+
+## Format
+
+Every video has corresponding annotation file containing bounding box coordinates for every frame. A single bounding box
+in a frame is represented by a line in the annotation file as follows:
+
+```
+frame number, number of bounding boxes, x1, y1, x2, y2
+```
+
+If a frame contains multiple bounding boxes, they are represented by a line in the annotation file as follows:
+
+```
+frame number, number of bounding boxes, box_1_x1, box_1_y1, box_1_x2, box_1_y2, box_2_x1, box_2_y1, box_2_x2, box_2_y2, ...
+```
+
+First frame is represented by frame number 0, second frame is represented by frame number 1 and so on...
+
 # Citation
 
 ```

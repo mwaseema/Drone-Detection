@@ -33,6 +33,16 @@ Keras = 2.0.8\
 OpenCV = 3.4.2\
 Tensorflow = 1.12.0
 
+**Other dependencies:**
+
+CUDA = 9.0.176\
+Nvidia Driver = 384.130
+
+**Tested on:**
+
+Ubuntu = 16.04\
+Ubuntu = 18.04
+
 # Spatial (2D) stage
 
 ## Generate image crops

@@ -30,19 +30,19 @@ def get_arguments():
 
 args = get_arguments()
 
-# test_frames_folder = "/home/hec/waseem/UAV/data/Videos/output_dataset_combined/test/frames"
+# test_frames_folder = "~/output_dataset_combined/test/frames"
 test_frames_folder = args.test_frames_folder
 
-# ground_truth_folder = "/home/hec/waseem/UAV/data/Videos/output_dataset_combined/test/single_stream_pspnet_101_voc12_fine_tuned_50epochs/object_detection_metrics/groundtruths"
+# ground_truth_folder = "~/output_dataset_combined/test/single_stream_pspnet_101_voc12_fine_tuned_50epochs/object_detection_metrics/groundtruths"
 ground_truth_folder = args.ground_truth_folder
 
-# detection_folder = '/home/hec/waseem/UAV/data/Videos/output_dataset_combined/test/single_stream_pspnet_101_voc12_fine_tuned_50epochs/object_detection_metrics/detections'
+# detection_folder = '~/output_dataset_combined/test/single_stream_pspnet_101_voc12_fine_tuned_50epochs/object_detection_metrics/detections'
 detection_folder = args.detection_folder
 
 # generate_visualized_frames = False
 generate_visualized_frames = args.generate_visualized_frames
 
-# output_folder_with_ground_truth_detection_highlighted = "/home/hec/waseem/UAV/data/Videos/output_dataset_combined/test/single_stream_pspnet_101_voc12_fine_tuned_50epochs/object_detection_metrics/highlighted"
+# output_folder_with_ground_truth_detection_highlighted = "~/output_dataset_combined/test/single_stream_pspnet_101_voc12_fine_tuned_50epochs/object_detection_metrics/highlighted"
 output_folder_with_ground_truth_detection_highlighted = args.visualized_frames_folder
 
 # iou_threshold = 0.5

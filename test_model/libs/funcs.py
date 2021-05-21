@@ -356,7 +356,7 @@ def predict_segmentation_for_files(model, image_paths, output_folder):
     # make output folder if doesn't exists
     create_folders_if_not_exists(output_folder)
 
-    pbr = tqdm(total=len(image_paths), desc='Predicting anomaly results', unit="frame", dynamic_ncols=True)
+    pbr = tqdm(total=len(image_paths), desc='Predicting results', unit="frame", dynamic_ncols=True)
     for img_path in image_paths:
         filename = os.path.basename(img_path)
         filename_wo_ext, _ = os.path.splitext(filename)

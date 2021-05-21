@@ -11,6 +11,7 @@ from tqdm import tqdm
 
 # folder containing epochs folder which contain detections folder
 from tools.crf.IoU_test import get_region_props
+from test_model.spatial.config import evaluation_script
 
 # if output folder by network test code ~/output_folder/EPOCH_NUMBER/network_detections
 # then here ~/output_folder
@@ -216,7 +217,7 @@ def main():
         os.system(command)
         print()
 
-        command = f'python "/home/pc/waseem/UAV/Object-Detection-Metrics-master/my_evaluation_metric_code/evaluation_code.py"'
+        command = f'python "{evaluation_script}"'
         command += f' --detection_folder "{annotation_detection_output_folder}"'
         command += f' --ground_truth_folder "{annotation_gt_output_folder}"'
         command += f' --iou_threshold 0.5'

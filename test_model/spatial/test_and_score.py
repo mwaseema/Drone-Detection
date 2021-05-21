@@ -16,8 +16,7 @@ from test_model.spatial.checkpoint_paths import checkpoints
 test_folder = config.frames_folder
 output_path = config.output_path
 ground_truth_folder = config.ground_truth_folder
-object_detection_metric_evaluation_script = path.abspath(
-    path.join(path.dirname(__file__), '..', '..', config.evaluation_script))
+object_detection_metric_evaluation_script = config.evaluation_script
 save_probabilities = config.save_probabilities
 
 

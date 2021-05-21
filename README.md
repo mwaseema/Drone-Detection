@@ -43,6 +43,13 @@ Nvidia Driver = 384.130
 Ubuntu = 16.04\
 Ubuntu = 18.04
 
+_**Note**: Before running any python code files, make sure to add Drone-Detection repository's root folder to PYTHONPATH
+variable otherwise you'll get import errors._
+
+```
+export PYTHONPATH="~/path_to/Drone-Detection:$PYTHONPATH"
+```
+
 # Videos to frames and annotations to masks
 
 `tools/video_to_frames_and_masks.py` can be used to extract and save frames from videos. This also reads annotation

@@ -9,6 +9,7 @@ batch_size = 5
 # number of samples randomly selected for training in an epoch
 steps_per_epoch = 1024
 
+# absolute folder path
 my_base_path = ""
 dataset_base_path = "drones_dataset"
 
@@ -30,4 +31,5 @@ dataset_links = {
 # if you are going to fine tune the model with given weights, set following is_finetune to True
 # and set absolute path to previously saved weight
 is_finetune = False
+# absolute path to weight file
 old_weight_path = ''

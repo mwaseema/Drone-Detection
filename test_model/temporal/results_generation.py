@@ -14,21 +14,21 @@ from tools.crf.IoU_test import get_region_props
 from test_model.spatial.config import evaluation_script
 
 # if output folder by network test code ~/output_folder/EPOCH_NUMBER/network_detections
-# then here ~/output_folder
+# then here ~/output_folder (absolute folder path)
 network_detections_outer_folder = ''
 # uncomment corresponding line if using fixed sized cuboids. As they need to be transformed back for scores computation
 # inverse_matrices_folder = ''
-# folder containing patch information json files
+# folder containing patch information json files (absolute folder path)
 volume_patch_information_folder = ''
-# detections obtained from 2D network
+# detections obtained from 2D network (absolute folder path)
 detection_masks_2d_folder = ''
-# folder containing ground truth binary masks
+# folder containing ground truth binary masks (absolute folder path)
 ground_truths_folder = ''
-# folder containing files with scores of 2d detections
+# folder containing files with scores of 2d detections (absolute folder path)
 box_scores_2d_folder = ''
-# file containing scores of 3d cuboid detection
+# file containing scores of 3d cuboid detection (absolute folder path)
 box_scores_3d_file_path = ''
-# folder containing cuboid patch information json file
+# folder containing cuboid patch information json file (absolute folder path)
 cuboid_patch_information_folder = ''
 
 # set this to folder containing stabilized masks if they need to be transformed back.

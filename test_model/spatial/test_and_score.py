@@ -32,7 +32,7 @@ def predict_segmentation_for_files(model, image_paths, output_folder):
         # img_crops = funcs.get_frame_and_ground_truth_crop(img_path)
         img_crops = funcs.get_frame_and_ground_truth_crop_4splits(img_path)
         img_segmentations_1 = []
-        img_segmentations_2 = []
+        # img_segmentations_2 = []
         pred_probabilities_1 = []
         # pred_probabilities_2 = []
         for img_crop in img_crops:
@@ -41,7 +41,7 @@ def predict_segmentation_for_files(model, image_paths, output_folder):
             )
             # appending to the list of predictions
             img_segmentations_1.append(segm_pred_1)
-            img_segmentations_2.append(segm_pred_2)
+            # img_segmentations_2.append(segm_pred_2)
 
             # take foreground channel
             pred_probability_1 = pred_probability_1[:, :, 1]
@@ -60,19 +60,19 @@ def predict_segmentation_for_files(model, image_paths, output_folder):
         # merged_mask1 = funcs.merge_segmentation_masks(img_segmentations_1)
         # merged_mask2 = funcs.merge_segmentation_masks(img_segmentations_2)
         merged_mask1 = funcs.merge_segmentation_masks_4splits(img_segmentations_1)
-        merged_mask2 = funcs.merge_segmentation_masks_4splits(img_segmentations_2)
+        # merged_mask2 = funcs.merge_segmentation_masks_4splits(img_segmentations_2)
 
         # converting predicted region to square
         merged_mask1 = funcs.convert_segmented_area_to_bounding_box(merged_mask1)
-        merged_mask2 = funcs.convert_segmented_area_to_bounding_box(merged_mask2)
+        # merged_mask2 = funcs.convert_segmented_area_to_bounding_box(merged_mask2)
 
         cv2.imwrite(output_image_path, merged_mask1)
 
-        output_filename = path.basename(output_image_path)
-        second_output_dirname = path.abspath(path.join(path.dirname(output_image_path), '..', 'second_detection'))
-        os.makedirs(second_output_dirname, exist_ok=True)
-        second_output_file_path = path.join(second_output_dirname, output_filename)
-        cv2.imwrite(second_output_file_path, merged_mask2)
+        # output_filename = path.basename(output_image_path)
+        # second_output_dirname = path.abspath(path.join(path.dirname(output_image_path), '..', 'second_detection'))
+        # os.makedirs(second_output_dirname, exist_ok=True)
+        # second_output_file_path = path.join(second_output_dirname, output_filename)
+        # cv2.imwrite(second_output_file_path, merged_mask2)
 
         if save_probabilities == 1:
             # merge probabilities

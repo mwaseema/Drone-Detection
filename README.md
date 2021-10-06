@@ -3,7 +3,8 @@
 **Paper title** \
 Dogfight: Detecting Drones from Drones Videos \
 Accepted for CVPR 2021\
-Preprint available at [arxiv](https://arxiv.org/abs/2103.17242)
+Paper available on [CVPR 2021](https://openaccess.thecvf.com/content/CVPR2021/html/Ashraf_Dogfight_Detecting_Drones_From_Drones_Videos_CVPR_2021_paper.html) main conference page \
+Preprint available on [arxiv](https://arxiv.org/abs/2103.17242)
 
 # Setup environment
 
@@ -221,6 +222,19 @@ First frame is represented by frame number 0, second frame is represented by fra
 
 # Citation
 
+**CVPR 2021**
+```
+@InProceedings{Ashraf_2021_CVPR,
+    author    = {Ashraf, Muhammad Waseem and Sultani, Waqas and Shah, Mubarak},
+    title     = {Dogfight: Detecting Drones From Drones Videos},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2021},
+    pages     = {7067-7076}
+}
+```
+
+**Preprint**
 ```
 @article{ashraf2021dogfight,
   title={Dogfight: Detecting Drones from Drones Videos},

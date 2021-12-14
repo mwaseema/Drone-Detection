@@ -17,6 +17,7 @@ annotations_folder = ''
 # if save_frame = 1, every frame will be saved
 save_frame = 4
 # value which will be placed in mask where an object exists
+# use 1 for training data and 255 for testing data
 foreground_in_mask = 255
 # folder where to output all the frames
 frames_output_folder = ''

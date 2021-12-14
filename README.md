@@ -56,6 +56,8 @@ export PYTHONPATH="~/path_to/Drone-Detection:$PYTHONPATH"
 `tools/video_to_frames_and_masks.py` can be used to extract and save frames from videos. This also reads annotation
 files and uses bounding boxes information to generate binary masks corresponding to each frame.
 
+You'll need to provide absolute paths to the folders containing videos and annotation files. You'll also need to change value of `foreground_in_mask` to `1` for training data and `255` for testing data.
+
 # Spatial (2D) stage
 
 ## Generate image crops
